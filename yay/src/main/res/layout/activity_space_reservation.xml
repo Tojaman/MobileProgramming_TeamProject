@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerLayout"
+    tools:context=".SpaceActivity">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ProgramReservationActivity">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/white"
+            app:title="공간예약완료"
+            app:titleTextColor="@android:color/black"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            />
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:src="@drawable/logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="350"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="공간 예약 완료"
+                android:textAlignment="center"
+                android:textSize="50sp" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="정상적으로 예약이 신청 되었습니다!"
+                android:textAlignment="center"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="승인 되면 알림으로 알려드리겠습니다!"
+                android:textAlignment="center"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="관리자가 빠른 시간내로 승인할 예정입니다!"
+                android:textAlignment="center"
+                android:textSize="21sp"
+                android:layout_marginBottom="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="공간 이름 : "
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/notifySpaceName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="공간 이름 넣을 위치"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="예약 시간 : "
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/notifySpaceClock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="예약 시간 넣을 위치"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="예약 날짜 : "
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/notifySpaceDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="예약 날짜 넣을 위치"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ReserveGotoHomeBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:text="홈으로 돌아가기"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:backgroundTint="#FFFFFF">
+            <FrameLayout
+                android:layout_width="58dp"
+                android:layout_height="70dp"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/MainHomebtn"
+                    android:layout_width="48dp"
+                    android:layout_height="44dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/home"
+                    android:layout_marginLeft="20dp"
+                    android:background="@android:color/transparent"/>
+                <TextView
+                    android:id="@+id/MainHometext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="홈"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="39dp"
+                    android:layout_marginBottom="5dp"/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="58dp"
+                android:layout_height="70dp"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/MainReservationbtn"
+                    android:layout_width="45dp"
+                    android:layout_height="47dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/reserve_click"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@android:color/transparent"/>
+                <TextView
+                    android:id="@+id/MainReservationtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="공간예약"
+                    android:layout_marginLeft="19dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="#3ABC1C"/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="58dp"
+                android:layout_height="70dp"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/MainProgrambtn"
+                    android:layout_width="40dp"
+                    android:layout_height="43dp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/puzzle"
+                    android:layout_marginLeft="25dp"
+                    android:background="@android:color/transparent"/>
+                <TextView
+                    android:id="@+id/MainProgramtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="프로그램"
+                    android:layout_marginLeft="17dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="5dp"/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/MainMypagebtn"
+                    android:layout_width="39dp"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/user"
+                    android:layout_marginLeft="29dp"/>
+                <TextView
+                    android:id="@+id/MainMypagetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="마이페이지"
+                    android:layout_marginLeft="15dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="5dp"/>
+            </FrameLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_drawer_header"
+        app:menu="@menu/drawer_menu"/>
+</androidx.drawerlayout.widget.DrawerLayout>

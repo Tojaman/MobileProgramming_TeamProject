@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Yay</string>
+    <string name="menu_button_description">메뉴 버튼</string>
+    <string name="search_button_description">검색 버튼</string>
+</resources>

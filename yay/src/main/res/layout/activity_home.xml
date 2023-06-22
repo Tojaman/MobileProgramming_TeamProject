@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearlayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/white"
+        app:title="청년스테이션"
+        app:titleTextColor="@android:color/black"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        />
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:src="@drawable/logo" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="운영중인 프로그램"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/Program5_Image"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                app:srcCompat="@drawable/card2"
+                                tools:srcCompat="@drawable/card2"
+                                android:paddingRight="10dp"
+                                android:layout_alignParentLeft="true"/>
+                            <ImageView
+                                android:id="@+id/Program3_Image"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                app:srcCompat="@drawable/card3"
+                                tools:srcCompat="@drawable/card3"
+                                android:paddingRight="10dp"
+                                android:layout_alignParentRight="true"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/Program1_Image"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                app:srcCompat="@drawable/card1"
+                                tools:srcCompat="@drawable/card1"
+                                android:paddingRight="10dp"
+                                android:layout_below="@id/Program5_Image"/>
+
+                            <ImageView
+                                android:id="@+id/Program4_Image"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                app:srcCompat="@drawable/card4"
+                                tools:srcCompat="@drawable/card4"
+                                android:paddingRight="10dp"
+                                android:layout_below ="@id/Program3_Image"
+                                android:layout_toRightOf="@id/Program1_Image"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/home_program_reservation_button"
+                        android:text="예약 하러 가기"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:backgroundTint="@color/white">
+                    </Button>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="진행중인 대관"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/YSpace"
+                                android:layout_width="199dp"
+                                android:layout_height="200dp"
+                                app:srcCompat="@drawable/youth_space"
+                                tools:srcCompat="@drawable/youth_space" />
+
+                            <ImageView
+                                android:id="@+id/Comunity_room"
+                                android:layout_width="190dp"
+                                android:layout_height="200dp"
+                                app:srcCompat="@drawable/community_room"
+                                tools:srcCompat="@drawable/community_room" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:id="@+id/kitchen"
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                app:srcCompat="@drawable/sodam_kitchin"
+                                tools:srcCompat="@drawable/sodam_kitchin" />
+
+                            <ImageView
+                                android:id="@+id/coliving_lab"
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                app:srcCompat="@drawable/coliving_lab"
+                                tools:srcCompat="@drawable/coliving_lab" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/home_space_reservation_button"
+                    android:text="예약 하러 가기"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:backgroundTint="@color/white">
+                </Button>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="58dp"
+            android:layout_height="70dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/MainHomebtn"
+                android:layout_width="48dp"
+                android:layout_height="44dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/white"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/home_click"/>
+
+            <TextView
+                android:id="@+id/MainHometext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="38dp"
+                android:text="홈"
+                android:textColor="#A4D868"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="58dp"
+            android:layout_height="70dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/MainReservationbtn"
+                android:layout_width="45dp"
+                android:layout_height="47dp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/reserve" />
+
+            <TextView
+                android:id="@+id/MainReservationtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="19dp"
+                android:text="공간예약" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="58dp"
+            android:layout_height="70dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/MainProgrambtn"
+                android:layout_width="40dp"
+                android:layout_height="43dp"
+                android:layout_marginLeft="25dp"
+                android:background="@color/white"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/puzzle" />
+
+            <TextView
+                android:id="@+id/MainProgramtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="17dp"
+                android:text="프로그램" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/MainMypagebtn"
+                android:layout_width="39dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginTop="6dp"
+                android:background="@color/white"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/user" />
+
+            <TextView
+                android:id="@+id/MainMypagetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="15dp"
+                android:text="마이페이지" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

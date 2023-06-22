@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu_search" android:title="search" android:icon="@drawable/ic_search" app:showAsAction="always" app:actionViewClass="androidx.appcompat.widget.SearchView"/>
+    <group>
+        <item
+            android:id="@+id/menu_settings"
+            android:title="설정"
+            android:orderInCategory="100"
+            android:icon="@drawable/ic_schedule"/>
+        <item
+            android:id="@+id/menu_help"
+            android:title="도움말"
+            android:orderInCategory="200"/>
+    </group>
+</menu>

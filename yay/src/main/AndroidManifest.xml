@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher_foreground"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MobileProgramming"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".Mypage_changepwd"
+            android:exported="false" />
+
+        <activity
+            android:name=".Mypage_join"
+            android:exported="false" />
+        <activity
+            android:name=".Mypage_reservation"
+            android:exported="false" />
+        <activity
+            android:name=".Mypage_find_pwd"
+            android:exported="false" />
+        <activity
+            android:name=".Mypage_account"
+            android:exported="false" />
+
+        <activity
+            android:name=".Mypage_login"
+            android:exported="false" />
+        <activity
+            android:name=".Mypage_main"
+            android:exported="false" />
+        <activity
+            android:name=".ProgramFormActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProgramInfomationActitivty"
+            android:exported="false" />
+        <activity
+            android:name=".ProgramReservationActivity"
+            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".MypageActivity"-->
+<!--            android:exported="false">-->
+<!--            <meta-data-->
+<!--                android:name="android.app.lib_name"-->
+<!--                android:value="" />-->
+<!--        </activity>-->
+        <activity
+            android:name=".ProgramActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+<!--        <activity-->
+<!--            android:name=".ReservationActivity"-->
+<!--            android:exported="false">-->
+<!--            <meta-data-->
+<!--                android:name="android.app.lib_name"-->
+<!--                android:value="" />-->
+<!--        </activity>-->
+<!--        <activity-->
+<!--            android:name=".HomeActivity"-->
+<!--            android:exported="false">-->
+<!--            <meta-data-->
+<!--                android:name="android.app.lib_name"-->
+<!--                android:value="" />-->
+<!--        </activity>-->
+        <activity android:name=".SpaceActivity" android:exported="false">
+            <meta-data android:name="android.app.lib_name" android:value=""/>
+        </activity>
+        <activity android:name=".SpaceFormActivity" android:exported="false"/>
+        <activity android:name=".SpaceInformationActivity" android:exported="false"/>
+        <activity android:name=".SpaceReserationActivity" android:exported="false"/>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <meta-data
+                android:name="com.example.yay.IS_LOGGED_IN"
+                android:value="true" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+    </application>
+
+</manifest>

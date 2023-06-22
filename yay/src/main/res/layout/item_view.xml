@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="8dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp">
+            <!-- 신청서 내용, 신청서 제출 일자, 신청날짜, 프로그램 ID, 모집기간, 모집인원, 행사일시, 참가비용-->
+
+            <ImageView
+                android:id="@+id/Program5_Image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:paddingRight="10dp"
+                app:srcCompat="@drawable/card2"
+                tools:srcCompat="@drawable/card2" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/ProgramTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:text="어버이날 앙금플라워"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="신청날짜 : "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/notifyProgramDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="신청날짜 띄울 곳"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="활동장소 : "
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/notifyProgramSpace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="청년스케이션 소담키친"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="참가비용 : "
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:id="@+id/notifyProgramMoney"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="15,000원"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="활동시간 : "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/notifyProgramClock"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="활동 시간 띄울 곳"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

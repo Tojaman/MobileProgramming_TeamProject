@@ -1,0 +1,46 @@
+<!-- layout_common.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 툴바 추가 -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/white"
+        app:title="청년스테이션"
+        app:titleTextColor="@android:color/black">
+
+        <!-- 메뉴 버튼 추가 -->
+        <ImageButton
+            android:id="@+id/menuButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:contentDescription="@string/menu_button_description"
+            android:padding="8dp"
+            android:src="@drawable/ic_menu"
+            android:background="@android:color/transparent"
+            />
+
+        <!-- 검색 버튼 추가 -->
+        <ImageButton
+            android:id="@+id/searchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:contentDescription="@string/search_button_description"
+            android:padding="8dp"
+            android:src="@drawable/ic_search"
+            android:background="@android:color/transparent"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- 나머지 액티비티 내용 추가 -->
+    <!-- ... -->
+
+</LinearLayout>

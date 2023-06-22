@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/know"
+
+            android:title="알고 싶어요!"/>
+        <item
+            android:id="@+id/enjoy"
+
+            android:title="청춘 즐기기!"/>
+
+        <item
+            android:id="@+id/map"
+            android:title="오시는 길" />
+    </group>
+</menu>
